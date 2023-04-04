@@ -1,0 +1,4 @@
+packages:
+  - git: "https://github.com/calogica/dbt-expectations.git"
+    revision: 0.8.0
+    # <see https://github.com/calogica/dbt-expectations/releases/latest> for the latest version tag

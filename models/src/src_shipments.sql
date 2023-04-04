@@ -1,3 +1,4 @@
+{{ config(materialized='table') }}
 WITH shipments AS (select * from SHIPMENT_DATAMART.SHIPMENT_DATAMART.shipments )
 SELECT shipment_id,
   kn_com_ref,
