@@ -1,0 +1,9 @@
+
+version: 2
+
+models:
+  - name: europe_shipments
+    columns:
+      - name: shipment_id
+        tests:
+          - dbt_expectations.expect_column_values_to_not_be_null
