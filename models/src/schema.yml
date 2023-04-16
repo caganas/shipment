@@ -7,3 +7,14 @@ models:
       - name: shipment_id
         tests:
           - dbt_expectations.expect_column_values_to_not_be_null
+          - unique
+          - not_null
+      - name: IS_DANG_GOOD
+        tests:
+          - accepted_values:
+              values:
+                - TRUE
+                - FALSE    
+
+          
+          
